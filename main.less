@@ -1,0 +1,139 @@
+/* Color Genrator help */
+//https://coolors.co/
+
+/* Defines */
+@background: #2B3134; //Charleston Green 2B2B2B 
+@foreground: #A9B7C6; //Wild Blue Yonder
+
+/* Code Styling */
+
+.CodeMirror, .CodeMirror-scroll {
+    background-color: @background;
+    color: @foreground;
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background {
+    background: #2f2f2f; //Jet 
+}
+
+.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+    box-shadow: inset 15px 0 0 0 #000; //black
+    
+}
+
+.CodeMirror-focused .CodeMirror-activeline {
+    .CodeMirror-gutter-elt { //when line is selected
+        background: rgba(0, 0, 0, 0.2); //some blackening
+        color: #fff; //white
+    }
+    .inline-widget .CodeMirror-gutter-elt { //number on the side
+        color: #767676; //sonic silver 
+    }
+}
+
+.cm-def {color: @foreground;}
+.cm-hr {color: #f7cf2e;} //Fresh air #a9daff 
+.cm-string, .cm-string-2 {color:#6A8759;} //Russian Green 
+.cm-number, .cm-plus, .cm-atom {color: #6897BB;} //Cerulean Frost 
+.cm-variable-2, .cm-variable-3, .cm-property {color: #AE8ABE;} //Afrincan violet
+.cm-variable, .cm-attribute {color: @foreground;}
+.cm-operator, .cm-meta, .cm-bracket {color: @foreground;}
+.cm-comment {color: #808080;} //Trolley grey 
+.cm-minus {color: #dc322f;} //Permanent Geranium lake 
+.cm-error {text-decoration: underline; text-decoration-color: red;}
+.cm-header {color: #d85896;} //Pink Pantone
+.cm-link {color: #b77fdb; text-decoration: none;} //Lavender Floral
+.cm-rangeinfo {color: #6c71c4;} //Toolbox
+.cm-qualifier, .cm-builtin, .cm-quote, .cm-tag {color: #E8BF6A;} //Hansa Yellow
+.cm-keyword {color: #CC7832;} //Bronze
+
+.cm-m-css.cm-property {color: #AE8ABE; } //Afrincan violet
+.cm-m-css.cm-atom {color: #6897BB; } //Cerulean Frost 
+.cm-m-xml.cm-string {color: #A5C261; } //Middle Green Yellow
+
+/* Extra CSS */
+
+.CodeMirror-searching {
+    background-color: #d3cd69;  //Booger Buster
+    &.searching-current-match { 
+        background-color: #f6a644; //Neon Carrot
+    } 
+} 
+
+
+.CodeMirror-cursor {
+    border-left: 1px solid #c5c8c6 !important;
+}
+
+.CodeMirror-gutters {
+    background-color: @background;
+    border-right: none;
+}
+
+.CodeMirror-linenumber {
+    color: #767676; //sonic silver
+}
+
+.CodeMirror .CodeMirror-selected {
+    background: #333f48; //charcoal
+}
+.CodeMirror-focused .CodeMirror-selected {
+    background: #214283; //dark cerulean
+}
+
+.CodeMirror-matchingbracket {
+    background-color: @background;
+    color:#FFEF28 !important; //daffodil
+    font-weight: bold !important;
+}
+
+.CodeMirror-matchingtag {
+    background-color: #2a2f45; //gunmetal
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none !important;
+    border-bottom: 1px solid #fff;
+}
+
+.CodeMirror {
+    .CodeMirror {
+        background: transparent;
+    }
+
+    .CodeMirror .CodeMirror-gutters {
+        background: transparent;
+        border-right: none;
+    }
+
+    .CodeMirror .CodeMirror-activeline-background {
+        background: transparent;
+    }
+
+    .CodeMirror .CodeMirror-activeline .CodeMirror-gutter-elt {
+        background: transparent;
+        color: #767676; //sonic silver
+    }
+
+    .CodeMirror-focused .CodeMirror-activeline-background {
+        background: #4e4e4e; //dark liver
+    }
+
+    .CodeMirror-focused .CodeMirror-activeline {
+        .CodeMirror-gutter-elt {
+            background: rgba(0, 0, 0, 0.2);
+            color: #fff;
+        }
+    }
+}
+
+/* Non-editor styling */
+
+.image-view,
+.not-editor {
+    background-color: @background;
+}
+
+.view-pane .image-view {
+    color: @foreground;
+}

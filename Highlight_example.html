@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<title>Title</title>
+
+<style>
+    body {
+        width: 500px;
+    }
+    
+    
+    p,
+    .usertext {
+        color: #FFFFFF;
+        background: #c0d0e0;
+        font-family: Calibri;
+
+    }
+    
+    @import url(print.css);
+    @media print {
+        a[href^=http]::after {
+            content: attr(href)
+        }
+    }
+
+</style>
+
+<script type="application/javascript">    
+    function test(block, cls) {
+        try {
+            if(cls.seach('stuff') != -1)
+                return action(block, true) + "class =" + cls
+        } catch (e) {
+            /* handle exception */
+        }
+        
+        for (var i=0; i < arr.length; i++) {
+            if (condition(arr[i]) === undefined)
+                console.log('undefined');
+        }
+    }
+    
+    export test;
+
+</script>
+
+<body>
+    <p checked class="title" id='title'>Title</p>
+    <!-- here goes the rest of the page -->
+</body>
